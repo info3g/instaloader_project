@@ -1,0 +1,388 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-21 17:38-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+
+#: stellar/views.py:44
+#, fuzzy
+#| msgid "thank you for your feedback"
+msgid "thank you for your contact"
+msgstr "Merci pour votre avis"
+
+#: stellar/views.py:46 stellar/views.py:64
+msgid "sorry something went wrong"
+msgstr "Désolé, quelque chose s'est mal passé"
+
+#: templates1/base.html:58 templates1/base.html:108
+#: templates1/stellar/send.html:19
+msgid "Send"
+msgstr "Envoyer de l'argent"
+
+#: templates1/base.html:61 templates1/base.html:108
+msgid "Request"
+msgstr "Demander de l'argent"
+
+#: templates1/base.html:65
+msgid "Balances"
+msgstr "Som"
+
+#: templates1/base.html:69
+msgid "Transactions"
+msgstr "Transactions"
+
+#: templates1/base.html:72
+msgid "Accounts"
+msgstr "Compte"
+
+#: templates1/base.html:75
+msgid "Settings"
+msgstr "Paramètres"
+
+#: templates1/base.html:78
+msgid "Logout"
+msgstr "déconnecter"
+
+#: templates1/base.html:83
+msgid "Markets"
+msgstr "marché"
+
+#: templates1/base.html:87 templates1/registration_form.html:14
+#: templates1/registration_update.html:11 templates1/settings.html:18
+msgid "Register"
+msgstr "Ouvrir un compte"
+
+#: templates1/base.html:90
+msgid "Login"
+msgstr "Connexion"
+
+#: templates1/base.html:109
+msgid "About"
+msgstr "Concernant"
+
+#: templates1/login.html:9
+msgid "Login to Qwallet"
+msgstr "Connexion"
+
+#: templates1/login.html:13 templates1/registration_update.html:15
+#: templates1/settings.html:36
+msgid "Email"
+msgstr "Email"
+
+#: templates1/login.html:15 templates1/registration_update.html:17
+#: templates1/settings.html:38
+msgid "Password"
+msgstr "Mot de passe"
+
+#: templates1/settings.html:22
+msgid "Language"
+msgstr "langue"
+
+#: templates1/settings.html:41
+msgid "Firstname"
+msgstr "Prenom"
+
+#: templates1/settings.html:44
+msgid "Lastname"
+msgstr "Nom Famile"
+
+#: templates1/settings.html:46
+#| msgid "Amount"
+msgid "Country"
+msgstr "Pays"
+
+#: templates1/settings.html:298
+msgid "Date of Birth"
+msgstr "Dat de Naissance"
+
+#: templates1/stellar/create_contact.html:13
+#: templates1/stellar/create_contact.html:16 templates1/stellar/send.html:15
+msgid "Create Contact"
+msgstr "Créer un contact"
+
+#: templates1/stellar/create_contact.html:18
+msgid "Contact"
+msgstr "Contact"
+
+#: templates1/stellar/create_contact.html:20
+msgid "Stellar Address"
+msgstr "Adresse Stellar"
+
+#: templates1/stellar/create_contact.html:23
+msgid "Memo"
+msgstr "note"
+
+#: templates1/stellar/get_contacts.html:17 templates1/stellar/send.html:16
+msgid "Get Contacts"
+msgstr "Ouvrir un compte"
+
+#: templates1/stellar/send.html:23
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: templates1/stellar/send.html:24
+msgid "Account"
+msgstr "Compte"
+
+#: templates1/stellar/send.html:25
+msgid "Amount"
+msgstr "Compte"
+
+#: templates1/stellar/send.html:26
+msgid "Currency"
+msgstr "Devise"
+
+
+
+#: templates1/stellar/accountdetails.html:1
+msgid "Import Accounts"
+msgstr "Comptes d'importation"
+#: tsmt/settings.py:21
+msgid "French"
+msgstr "français"
+
+#: tsmt/settings.py:22
+msgid "English"
+msgstr "Anglais"
+
+msgid "Create Wallet"
+msgstr "Ouvrir un compte"
+
+ msgid "Create Recipient"
+ msgstr "Créer bénéficiaire"
+
+msgid "Create Account"
+msgstr "Compte"
+
+
+
+
+
+#:templates/registration_form.html:1
+
+
+#:templates/registration_form.html:2
+msgid "Please login"
+msgstr "Veuillez vous connecter"
+
+#:templates/registration_form.html:3
+
+msgid "Please Registered"
+msgstr "Inscrit"
+
+
+#: templates1/stellar/get_contacts.html:17 templates1/stellar/send.html:16
+
+
+
+
+msgid "must"
+msgstr "doit "
+
+#: forum/registry.py:62
+msgid "support"
+msgstr "Aide"
+
+#: forum/registry.py:63
+msgid "contains at least 8 characters, 1 uppercase, 1 lowercase and 1 number"
+msgstr "contient au moins 8 caractères, 1 majuscule, 1 minuscule et 1 chiffre"
+
+#: forum/registry.py:63
+msgid "Please login?"
+msgstr "S'il vous plaît vous connecter?"
+
+#: forum/registry.py:63
+msgid "Registered?"
+msgstr "Inscrit?"
+
+#: forum/registry.py:63
+msgid "Not Registered?"
+msgstr "Non enregistré?"
+
+
+#: forum/registry.py:63
+msgid "Create an accounts"
+msgstr "Créer un compte"
+
+#: forum/registry.py:63
+msgid "Orders"
+msgstr "Ordres"
+
+#: forum/registry.py:63
+msgid "Go"
+msgstr "Aller"
+
+#: forum/registry.py:63
+msgid "phone number"
+msgstr "numéro de téléphone"
+
+#: forum/registry.py:63
+msgid "Photo of QR code"
+msgstr "Photo du code QR"
+
+#: forum/registry.py:63
+msgid "Enter Recipient"
+msgstr "Entrez le destinataire"
+
+#: forum/registry.py:63
+msgid "Import Account"
+msgstr "Compte d'importation"
+
+#: forum/registry.py:63
+msgid "Name"
+msgstr "Nom"
+
+#: forum/registry.py:63
+msgid "New Wallet"
+msgstr "Nouveau portefeuille"
+
+#: forum/registry.py:63
+msgid "Secret Key"
+msgstr "Clef secrète"
+
+#: forum/registry.py:63
+msgid "submit"
+msgstr "soumettre"
+
+#: forum/registry.py:63
+msgid "About Remittance"
+msgstr "À propos des envois de fonds"
+
+#: forum/registry.py:63
+msgid "Tools to Analyze Fees"
+msgstr "Outils pour analyser les frais"
+
+#: forum/registry.py:63
+msgid "Check Status of send WU"
+msgstr "Vérifier l'état de l'envoi WU"
+
+#: forum/registry.py:63
+msgid "Check Status of send Tempo"
+msgstr "Vérifier l'état de l'envoi du tempo"
+
+#: forum/registry.py:63
+msgid "Check Status of send Ria"
+msgstr "Vérifier l'état de l'envoi Ria"
+
+
+#: forum/registry.py:63
+msgid "Tools to Analyze Fees/"
+msgstr "Outils pour analyser les frais /"
+
+
+#: forum/registry.py:63
+msgid "Here are tools to help you get more out of remittance"
+msgstr "Voici des outils pour vous aider à tirer le meilleur parti des envois de fonds"
+
+
+#: forum/registry.py:63
+msgid "Remittance"
+msgstr "Remise"
+
+#: forum/registry.py:63
+msgid "subject"
+msgstr "matière"
+
+#: forum/registry.py:63
+msgid "Send Message"
+msgstr "Envoyer le message"
+
+#: forum/registry.py:63
+msgid "Tollfree Number:"
+msgstr "Numéro sans frais:"
+
+#: forum/registry.py:63
+msgid "Website:"
+msgstr "Site Internet:"
+
+#: forum/registry.py:63
+msgid "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content"
+msgstr "C'est un fait établi de longue date qu'un lecteur sera distrait par le contenu lisible d'une page lorsqu'il examinera sa mise en page. Lorem Ipsum a l'avantage de présenter une distribution de lettres plus ou moins normale, par opposition à l'utilisation de Contenu"
+
+
+#: forum/registry.py:63
+msgid "Dummy Text"
+msgstr "Faux texte"
+
+#: forum/registry.py:63
+msgid "Login History"
+msgstr "Historique de connexion"
+
+#: forum/registry.py:63
+msgid "User Details:"
+msgstr "Détails de l'utilisateur:"
+
+#: forum/registry.py:63
+msgid "Welcome"
+msgstr "Bienvenue"
+
+#: forum/registry.py:63
+msgid "From"
+msgstr "De"
+
+#: forum/registry.py:63
+msgid "To"
+msgstr "À"
+
+#: forum/registry.py:63
+msgid "Remittance is people sending money home to people they love"
+msgstr "Les envois de fonds sont des personnes qui envoient de l'argent chez eux à des personnes qu'ils aiment"
+
+#: forum/registry.py:63
+msgid "Remittance is the largest source of foriegn aid. It far outstrips UN aid in terms of impact to people in developing countries"
+msgstr "Les envois de fonds constituent la plus grande source d’aide internationale. Il dépasse de loin l'aide des Nations Unies en termes d'impact sur les populations des pays en développement"
+
+#: forum/registry.py:63
+msgid "that can help you send more to people you loveqwallet and stellar were made to help people who are unbanked do banking more efficiently"
+msgstr "qui peuvent vous aider à envoyer plus à des personnes que vous aimez et qui ont été conçues pour aider les personnes non bancarisées à effectuer leurs opérations bancaires plus efficacement"
+
+#: forum/registry.py:63
+msgid "As a part of that we have several apps"
+msgstr "Dans le cadre de cela, nous avons plusieurs applications"
+
+#: forum/registry.py:63
+msgid "TODO download the World bank on fees - implement here"
+msgstr "TODO télécharger la Banque mondiale sur les frais - mettre en œuvre ici"
+
+#: forum/registry.py:63
+msgid "Select"
+msgstr "Sélectionner"
+
+#: forum/registry.py:63
+msgid "Test"
+msgstr "Tester"
+
+#: forum/registry.py:63
+msgid "Transaction  Details"
+msgstr "Détails de la transaction"
+
+#: forum/registry.py:63
+msgid "Address"
+msgstr "Adresse"
+
+#: forum/registry.py:63
+msgid "User"
+msgstr "Utilisatrice"
+
+#: forum/registry.py:63
+msgid "true"
+msgstr "vraie"
+
+#: forum/registry.py:63
+msgid "false"
+msgstr "faux"

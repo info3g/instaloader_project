@@ -1,0 +1,90 @@
+
+
+{% extends 'dash.html' %}
+{% block content %}
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<!-- <body> -->
+<div class="col-sm-12">
+  <div class="toptable">
+<h2>Statut <span><button  style="font-size:24px" class="fa">&#xf060;</button></span></h2>
+
+<div class="col-sm-6 pull-left usertable">
+<table>
+  
+
+  <tr>
+    <th>Numéro</th>
+    <th>Username</th>
+   
+  </tr>
+  {% for post_a in user_name_a %}
+  <tr>
+    <td>{{forloop.counter}}</td>
+    <td><p>{{ post_a }}</p></td>
+   
+  </tr>
+
+  {% endfor %}
+</table>
+</div> 
+<div class="col-sm-6 pull-left usertable  miidle-table"> 
+<table>
+  
+
+  <tr>
+    
+    <th>Suit</th>
+  </tr>
+   {% for a in following_name_a %}
+  <tr>
+     <td data-toggle="tooltip" title="{{ a }}"><p>{{ a }}</p></td>
+    <!-- <td>{{ a }} </td> -->
+  </tr>
+
+  {% endfor %}
+</table>
+</div>
+
+</div>  
+</div>  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+  $(document).ready(function(){
+        $(".save-cahnges").click(function(){
+            // $(".loader").show()
+             // $(".text_msg").show()
+            // $("#hideall").hide()
+          alert("Press OK Save all changes")
+
+        });
+    });
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+  });
+  </script>
+
+<!-- </body> -->
+{% endblock %}
+
+
+

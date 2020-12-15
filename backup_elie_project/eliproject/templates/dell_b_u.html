@@ -1,0 +1,218 @@
+
+{% extends 'dash.html' %}
+{% block content %}
+
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.text_msg{
+  display: none;
+  margin: 2%;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 100%;
+  border-top: 16px solid #d24a62;
+  width: 170px;
+  height: 170px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  display: none;
+  /*margin: 20%;*/
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+</style>
+<div id="hideall">
+<form method="POST" action={% url 'dell_b' %} autocomplete="off" class="col-sm-12 timer-form">
+
+  <div class="autocomplete pull-right" style="width:300px;">
+    <input id="myInput" type="text" name="Usernames" placeholder="Rechercher par nom" required="">
+      <!-- <input type="Search"> -->
+      <button type="submit"  value="Submit">Chercher</button>
+
+  </div>
+</form>
+</div>
+<div id="hideall">
+<form  method="post" class="user_form">
+  <div class="inner_user">
+  <h2>Agents</h2>
+  
+	 {% csrf_token %}
+ <!--  <label for="fname">Ajouter un joueur</label>
+  <input type="text" id="fname" placeholder="Ajouter un joueur" name="fname" required="">
+  <button type="submit" class="btn btn-light btn-light-2 submit-btn" value="Submit" data-toggle="tooltip" title="Add New User Group B Agent">Ajouter</button><button class="btn btn-light btn-light-2 save-cahnges " ><a  href="/follows/" data-toggle="tooltip" title="Click on this button to save all changes!">Enregistrer</a></button>  -->
+</div>  
+<table>
+  <tr>
+    <th>Numéro</th>
+    <th>Username</th>
+     <th>Supprimer l'agent</th>
+  </tr>
+  
+  <tr>
+    <td>1</td>
+    <td>{{ user_name_b }} </td>
+    <td> <button class="btn btn-light btn-light-2" ><a class="btn" data-toggle="tooltip" title="Supprimer l'agent" href="/deletes?order={{ user_name_b }}">Supprimer</a></button> </td>
+    
+  </tr>
+
+</table>
+
+</form>
+</div>
+
+<center class="div-loader">
+  <div class="loader"></div>
+<h3 align="center"><div class="text_msg">Saving all Changes</div></h3>
+</center>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+  $(document).ready(function(){
+        $(".save-cahnges").click(function() {
+            // $(".loader").show()
+            // $(".text_msg").show()
+            // $("#hideall").hide()
+            alert("Press OK Save all changes")
+        });
+    });
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+  </script>
+
+<script>
+  function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+          b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  /*execute a function when someone clicks in the document:*/
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+/*An array containing all the country names in the world:*/
+let countries_data = {{ user_name___b|safe }};
+var countries = countries_data;
+
+
+/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("myInput"), countries);
+</script>
+{% endblock %}
+

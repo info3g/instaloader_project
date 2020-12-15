@@ -1,0 +1,343 @@
+{% extends 'dash.html' %}
+{% block content %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+/*
+body {
+  font: 16px Arial;  
+}
+*/
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+  #time{
+        display: none;
+      }
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.text_msg{
+  display: none;
+  margin: 2%;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 100%;
+  border-top: 16px solid #d24a62;
+  width: 170px;
+  height: 170px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  display: none;
+
+}
+.usertable tr th:last-child {
+    width: 199px;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+</style>
+</head>     
+<body class="remove-loader">
+
+
+
+
+<form autocomplete="off" class="col-sm-12 timer-form"  >
+
+  <div class="timer-top">
+    <p class="current-time">Dernière mise à jour à :- {{current_time}}</p>  
+   <p class="next-time">Prochaine mise à jour à :- {{showtimes}}</p>
+   <span id="time"></span>
+    <div id="timer"></div>
+</div>
+<div class="col-sm-12">
+  <div class="row">
+  <div class="button-and-text">
+ <div class="col-sm-6 feedback-heading">  
+<h2>Fil d'actualité</h2>
+</div>
+
+<div class="col-sm-6 feedback-button-detail">
+ <div class="autocomplete pull-right" style="width:300px;">
+    <input id="myInput" type="text" name="Usernames" placeholder="Rechercher par nom" required="">
+      <!-- <input type="Search"> -->
+      <button type="submit"  value="Submit">Chercher</button>
+
+  </div>
+<span class="download-csv pull-right"><a href="/data.csv" class="btn btn-info" id="chacha">Télécharger le CSV</a></span>
+  </div>
+  </div>
+  <div class="toptable col-sm-12">
+
+
+
+<div class="feed-table">
+<div class="col-sm-12 pull-left usertable table_create_new ">
+<table>
+ 
+
+  <tr>
+    <th>Numéro</th>
+    <th>Username</th>
+     <th>Statut</th>
+    <th>Date et heure</th>
+
+   
+  </tr>
+  
+  {% for fed, affed, datess in mylist %}
+  <tr>
+
+    <td valign="top">{{forloop.counter}}</td>
+    
+    
+    {% if fed in jassssss %}
+    <td style="color:red" valign="top"> <p> {{fed}}</p></td>
+    <td valign="top" data-toggle="tooltip" title=" {{ affed }}"><p> {{ affed }}</p></td>
+    <td valign="top"><p>{{datess}}</p></td>
+
+
+
+
+    {% else %}
+      <td style="color:#4AA02C" valign="top"><p>{{fed}}</p></td>
+      <td valign="top" data-toggle="tooltip" title=" {{ affed }}"><p> {{ affed }}</p></td>
+      <td valign="top"><p>{{datess}}</p></td>
+
+    {% endif %}
+   
+  </tr>
+
+  {% endfor %}
+</table>
+</div> 
+
+<!-- <div class="col-sm-2 pull-left usertable miidle-table"> 
+<table>
+  
+
+  <tr>
+    
+    <th>Old User Name</th>
+  </tr>
+   {% for usersstauta in userssss %}
+  <tr>
+    <td><p>{{usersstauta}}</p></td>
+  </tr>
+
+  {% endfor %}
+</table>
+</div>
+ -->
+
+
+
+
+</div>
+</div>  
+</div> 
+</div> 
+</form>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+  $(document).ready(function(){
+        $(".save-cahnges").click(function(){
+            // $(".loader").show()
+             // $(".text_msg").show()
+            // $("#hideall").hide()
+          alert("Press OK Save all changes")
+
+        });
+    });
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+  });
+  </script>
+
+
+<script>
+function autocomplete(inp, arr) {
+
+  var currentFocus;
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      this.parentNode.appendChild(a);
+      for (i = 0; i < arr.length; i++) {
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          b = document.createElement("DIV");
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          b.addEventListener("click", function(e) {
+              inp.value = this.getElementsByTagName("input")[0].value;
+
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+      
+        currentFocus++;
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+
+        currentFocus--;
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        e.preventDefault();
+        if (currentFocus > -1) {
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    if (!x) return false;
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+var cl = console.log;
+var al = alert;
+
+let countries_data = {{ users|safe }};
+var countries = countries_data;
+
+
+autocomplete(document.getElementById("myInput"), countries);
+
+//  let time = document.getElementById("time").innerHTML;
+// console.log(time);
+//       // var count = time *3600;
+//       var count = time
+//       var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
+
+//       function timer() {
+//          count = count - 1;
+//          count = Math.round(count);
+//          // console.log();
+//          if (count <= -1) {          
+//              clearInterval(counter);
+//              document.getElementById("timer").innerHTML = "<span class='hours'> 0 hrs:</span><span class='minutes'> 0 mins:</span><span class='seconds'>0 sec</span>";
+//              return;
+//          }
+//         else{
+//          var seconds = count % 60;
+//          var minutes = Math.floor(count / 60);
+//          var hours = Math.floor(minutes / 60);
+//          minutes %= 60;
+//          hours %= 60;         
+//          document.getElementById("timer").innerHTML = "<span class='hours'>" + hours + "hrs:</span><span class='minutes'>" + minutes + "mins:</span><span class='seconds'>" + Math.round(seconds) + "sec</span>";
+//       }
+//     }
+</script>
+</body>
+          
+{% endblock %}

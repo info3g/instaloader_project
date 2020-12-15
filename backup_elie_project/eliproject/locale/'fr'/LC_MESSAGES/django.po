@@ -1,0 +1,477 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-30 17:48+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\stellar\views.py:73
+msgid "thank you for your contact"
+msgstr ""
+
+#: .\stellar\views.py:75 .\stellar\views.py:92 .\stellar\views.py:266
+msgid "sorry something went wrong"
+msgstr ""
+
+#: .\stellar\views.py:264
+msgid "You account is successfully created"
+msgstr ""
+
+#: .\templates\about.html:62 .\templates\settings.html:327
+msgid "Back"
+msgstr ""
+
+#: .\templates\base.html:42 .\templates\settings.html:38
+msgid "Language"
+msgstr ""
+
+#: .\templates\base.html:52 .\templates\settings.html:49
+msgid "Go"
+msgstr ""
+
+#: .\templates\base.html:64 .\templates\nav_0.html:21 .\templates\nav_1.html:45
+#: .\templates\stellar\accountdetails.html:35 .\templates\stellar\send.html:19
+#: .\templates\stellar\send.html:37 .\templates\stellar\sendemail.html:16
+#: .\templates\stellar\sendmobile.html:19
+msgid "Send"
+msgstr ""
+
+#: .\templates\base.html:64 .\templates\nav_0.html:24 .\templates\nav_1.html:48
+#: .\templates\stellar\request.html:13 .\templates\stellar\request.html:26
+msgid "Request"
+msgstr ""
+
+#: .\templates\base.html:65
+msgid "About"
+msgstr ""
+
+#: .\templates\base.html:66
+msgid "support"
+msgstr ""
+
+#: .\templates\login.html:10
+msgid "Login to Qwallet"
+msgstr ""
+
+#: .\templates\login.html:15 .\templates\registration_form.html:19
+#: .\templates\stellar\accountcreate.html:25
+#: .\templates\stellar\import_account.html:17 .\templates\stellar\send.html:24
+#: .\templates\stellar\sendemail.html:21 .\templates\stellar\sendmobile.html:24
+msgid "Username"
+msgstr ""
+
+#: .\templates\login.html:16 .\templates\registration_form.html:20
+#: .\templates\registration_form.html:21 .\templates\registration_form.html:23
+#: .\templates\registration_update.html:17 .\templates\settings.html:57
+msgid "Password"
+msgstr ""
+
+#: .\templates\login.html:17 .\templates\nav_0.html:63
+#: .\templates\nav_1.html:82
+msgid "Login"
+msgstr ""
+
+#: .\templates\login.html:18
+msgid "Not Registered?"
+msgstr ""
+
+#: .\templates\login.html:18
+msgid "Create an accounts"
+msgstr ""
+
+#: .\templates\nav_0.html:18
+msgid "Orders"
+msgstr ""
+
+#: .\templates\nav_0.html:28 .\templates\nav_0.html:36
+#: .\templates\nav_1.html:60 .\templates\stellar\accountdetails.html:10
+#: .\templates\stellar\accounts.html:12 .\templates\stellar\accounts.html:19
+#: .\templates\stellar\accounts.html:49 .\templates\stellar\request.html:17
+#: .\templates\stellar\transactions.html:18
+msgid "Accounts"
+msgstr ""
+
+#: .\templates\nav_0.html:30 .\templates\nav_1.html:54
+#: .\templates\stellar\accountdetails.html:10
+#: .\templates\stellar\accountdetails.html:23
+#: .\templates\stellar\accountdetails.html:30
+#: .\templates\stellar\accountdetails.html:58
+msgid "Balances"
+msgstr ""
+
+#: .\templates\nav_0.html:33 .\templates\nav_1.html:57
+msgid "Transactions"
+msgstr ""
+
+#: .\templates\nav_0.html:39 .\templates\nav_0.html:41
+#: .\templates\nav_1.html:64 .\templates\settings.html:31
+msgid "Settings"
+msgstr ""
+
+#: .\templates\nav_0.html:46 .\templates\nav_1.html:67
+msgid "Logout"
+msgstr ""
+
+#: .\templates\nav_0.html:49
+msgid "Login History"
+msgstr ""
+
+#: .\templates\nav_0.html:55
+msgid "Menu"
+msgstr ""
+
+#: .\templates\nav_0.html:57 .\templates\nav_1.html:76
+msgid "Remittance"
+msgstr ""
+
+#: .\templates\nav_0.html:60 .\templates\nav_1.html:79
+#: .\templates\registration_form.html:13 .\templates\registration_form.html:30
+#: .\templates\registration_update.html:11
+msgid "Register"
+msgstr ""
+
+#: .\templates\nav_1.html:72
+msgid "Markets"
+msgstr ""
+
+#: .\templates\registration_form.html:14
+msgid "Register to Qwallet"
+msgstr ""
+
+#: .\templates\registration_form.html:23
+msgid "must"
+msgstr ""
+
+#: .\templates\registration_form.html:23
+msgid "contains at least 8 characters, 1 uppercase, 1 lowercase and 1 number"
+msgstr ""
+
+#: .\templates\registration_form.html:25 .\templates\settings.html:60
+msgid "Firstname"
+msgstr ""
+
+#: .\templates\registration_form.html:26 .\templates\settings.html:63
+msgid "Lastname"
+msgstr ""
+
+#: .\templates\registration_form.html:27
+#: .\templates\registration_update.html:15 .\templates\settings.html:55
+#: .\templates\stellar\contact.html:45
+#: .\templates\stellar\enterrecipient.html:20
+#: .\templates\stellar\request.html:24 .\templates\stellar\sendemail.html:22
+msgid "Email"
+msgstr ""
+
+#: .\templates\registration_form.html:28 .\templates\stellar\sendmobile.html:25
+msgid "Mobile"
+msgstr ""
+
+#: .\templates\registration_form.html:31
+msgid "Registered?"
+msgstr ""
+
+#: .\templates\registration_form.html:31
+msgid "Please login?"
+msgstr ""
+
+#: .\templates\remittance.html:11 .\templates\remittance.html:43
+#: .\templates\remittance.html:53
+msgid "About Remittance"
+msgstr ""
+
+#: .\templates\remittance.html:33
+msgid "True"
+msgstr ""
+
+#: .\templates\remittance.html:37
+msgid "False"
+msgstr ""
+
+#: .\templates\remittance.html:40
+msgid "Here are tools to help you get more out of remittance"
+msgstr ""
+
+#: .\templates\remittance.html:44
+msgid "Tools to Analyze Fees"
+msgstr ""
+
+#: .\templates\remittance.html:45
+msgid "Check Status of send WU"
+msgstr ""
+
+#: .\templates\remittance.html:46
+msgid "Check Status of send Tempo"
+msgstr ""
+
+#: .\templates\remittance.html:47
+msgid "Check Status of send Ria"
+msgstr ""
+
+#: .\templates\remittance.html:54
+msgid "Remittance is people sending money home to people they love"
+msgstr ""
+
+#: .\templates\remittance.html:55
+msgid ""
+"Remittance is the largest source of foriegn aid. It far outstrips UN aid in "
+"terms of impact to people in developing countries"
+msgstr ""
+
+#: .\templates\remittance.html:56
+msgid ""
+"that can help you send more to people you loveqwallet and stellar were made "
+"to help people who are unbanked do banking more efficiently"
+msgstr ""
+
+#: .\templates\remittance.html:57
+msgid "As a part of that we have several apps"
+msgstr ""
+
+#: .\templates\remittance.html:60
+msgid "Tools to Analyze Fees/"
+msgstr ""
+
+#: .\templates\remittance.html:62
+msgid "TODO download the World bank on fees - implement here"
+msgstr ""
+
+#: .\templates\settings.html:65
+msgid "Country"
+msgstr ""
+
+#: .\templates\settings.html:317
+msgid "Date of Birth"
+msgstr ""
+
+#: .\templates\settings.html:321 .\templates\stellar\create_contact.html:22
+#: .\templates\stellar\import_account.html:29
+#: .\templates\stellar\sendemail.html:34 .\templates\stellar\sendmobile.html:36
+msgid "submit"
+msgstr ""
+
+#: .\templates\stellar\accountcreate.html:12
+#: .\templates\stellar\accounts.html:51
+msgid "Create Wallet"
+msgstr ""
+
+#: .\templates\stellar\accountcreate.html:26
+#: .\templates\stellar\accounts.html:41 .\templates\stellar\contact.html:39
+msgid "Name"
+msgstr ""
+
+#: .\templates\stellar\accountcreate.html:27
+msgid "Account Id"
+msgstr ""
+
+#: .\templates\stellar\accountcreate.html:28
+#: .\templates\stellar\import_account.html:23
+msgid "Secret Key"
+msgstr ""
+
+#: .\templates\stellar\accountdetails.html:20
+#: .\templates\stellar\accountdetails.html:27
+#: .\templates\stellar\accountdetails.html:55
+msgid "Asset"
+msgstr ""
+
+#: .\templates\stellar\accountdetails.html:20
+#: .\templates\stellar\accountdetails.html:55
+msgid "Lumen"
+msgstr ""
+
+#: .\templates\stellar\accountdetails.html:36
+msgid "Import Account"
+msgstr ""
+
+#: .\templates\stellar\accountdetails.html:62
+#: .\templates\stellar\accounts.html:72
+msgid "Create Account"
+msgstr ""
+
+#: .\templates\stellar\accounts.html:13
+msgid "Account Details"
+msgstr ""
+
+#: .\templates\stellar\accounts.html:26
+msgid "Test"
+msgstr ""
+
+#: .\templates\stellar\accounts.html:27
+msgid "Public"
+msgstr ""
+
+#: .\templates\stellar\accounts.html:43
+msgid "New Wallet"
+msgstr ""
+
+#: .\templates\stellar\contact.html:16
+msgid "Dummy Text"
+msgstr ""
+
+#: .\templates\stellar\contact.html:23
+msgid ""
+"It is a long established fact that a reader will be distracted by the "
+"readable content of a page when looking at its layout. The point of using "
+"Lorem Ipsum is that it has a more-or-less normal distribution of letters, as "
+"opposed to using Content"
+msgstr ""
+
+#: .\templates\stellar\contact.html:26
+msgid "Tollfree Number:"
+msgstr ""
+
+#: .\templates\stellar\contact.html:31
+msgid "Website:"
+msgstr ""
+
+#: .\templates\stellar\contact.html:51
+msgid "subject"
+msgstr ""
+
+#: .\templates\stellar\contact.html:57
+msgid "Message"
+msgstr ""
+
+#: .\templates\stellar\contact.html:63
+msgid "Send Message"
+msgstr ""
+
+#: .\templates\stellar\create_contact.html:11
+#: .\templates\stellar\create_contact.html:14
+#: .\templates\stellar\get_contacts.html:16 .\templates\stellar\send.html:15
+#: .\templates\stellar\sendmobile.html:15
+msgid "Create Contact"
+msgstr ""
+
+#: .\templates\stellar\create_contact.html:12
+#: .\templates\stellar\get_contacts.html:17
+#: .\templates\stellar\get_contacts.html:19 .\templates\stellar\send.html:16
+#: .\templates\stellar\sendmobile.html:16
+msgid "Get Contacts"
+msgstr ""
+
+#: .\templates\stellar\create_contact.html:19
+msgid "Contact"
+msgstr ""
+
+#: .\templates\stellar\create_contact.html:20
+#: .\templates\stellar\enterrecipient.html:22
+msgid "Stellar Address"
+msgstr ""
+
+#: .\templates\stellar\create_contact.html:21 .\templates\stellar\send.html:35
+#: .\templates\stellar\sendemail.html:32 .\templates\stellar\sendmobile.html:35
+msgid "Memo"
+msgstr ""
+
+#: .\templates\stellar\enterrecipient.html:15
+msgid "Enter Recipient"
+msgstr ""
+
+#: .\templates\stellar\enterrecipient.html:21
+msgid "phone number"
+msgstr ""
+
+#: .\templates\stellar\enterrecipient.html:23
+msgid "Photo of QR code"
+msgstr ""
+
+#: .\templates\stellar\get_contacts.html:28
+msgid "User"
+msgstr ""
+
+#: .\templates\stellar\get_contacts.html:29
+msgid "Address"
+msgstr ""
+
+#: .\templates\stellar\get_contacts.html:30
+msgid "Action"
+msgstr ""
+
+#: .\templates\stellar\loginhistory.html:14
+msgid "Welcome"
+msgstr ""
+
+#: .\templates\stellar\loginhistory.html:16
+msgid "User Details:"
+msgstr ""
+
+#: .\templates\stellar\payment_confirmation.html:18
+msgid "Payment Confirmation"
+msgstr ""
+
+#: .\templates\stellar\payment_confirmation.html:43
+msgid "Yes"
+msgstr ""
+
+#: .\templates\stellar\payment_confirmation.html:46
+msgid "No"
+msgstr ""
+
+#: .\templates\stellar\payment_confirmation.html:59
+msgid "Change Recipient"
+msgstr ""
+
+#: .\templates\stellar\payment_confirmation.html:62
+msgid "Change Amount"
+msgstr ""
+
+#: .\templates\stellar\payment_confirmation.html:64
+msgid "Change Currency"
+msgstr ""
+
+#: .\templates\stellar\payment_confirmation.html:67
+msgid "Change Memo"
+msgstr ""
+
+#: .\templates\stellar\request.html:25 .\templates\stellar\send.html:26
+#: .\templates\stellar\sendemail.html:23 .\templates\stellar\sendmobile.html:26
+#: .\templates\stellar\transactions.html:21
+msgid "Amount"
+msgstr ""
+
+#: .\templates\stellar\send.html:25
+msgid "Account"
+msgstr ""
+
+#: .\templates\stellar\send.html:27 .\templates\stellar\sendemail.html:24
+#: .\templates\stellar\sendmobile.html:27
+msgid "Currency"
+msgstr ""
+
+#: .\templates\stellar\send.html:29 .\templates\stellar\sendemail.html:26
+#: .\templates\stellar\sendmobile.html:29
+msgid "Select"
+msgstr ""
+
+#: .\templates\stellar\transactions.html:13
+msgid "Transaction  Details"
+msgstr ""
+
+#: .\templates\stellar\transactions.html:22
+msgid "From"
+msgstr ""
+
+#: .\templates\stellar\transactions.html:23
+msgid "To"
+msgstr ""
+
+#: .\tsmt\settings.py:14
+msgid "French"
+msgstr ""
+
+#: .\tsmt\settings.py:15
+msgid "English"
+msgstr ""
